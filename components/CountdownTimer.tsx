@@ -61,13 +61,13 @@ export default function CountdownTimer() {
 
   const TimeUnit = ({ value, label }: { value: number; label: string }) => (
     <div className="flex flex-col items-center">
-      <div className="relative w-20 h-20 md:w-24 md:h-24 border border-foreground/30 rounded-sm flex items-center justify-center mb-3 overflow-hidden group">
-        <div className="absolute inset-0 bg-foreground/5 group-hover:bg-foreground/10 transition-colors duration-300" />
-        <span className="elegant-serif text-2xl md:text-4xl text-foreground relative z-10">
+      <div className="relative w-20 h-20 md:w-24 md:h-24 border border-[#FFF5E1]/30 rounded-sm flex items-center justify-center mb-3 overflow-hidden group">
+        <div className="absolute inset-0 bg-[#2A2C20] group-hover:bg-[#2A2C20] transition-colors duration-300" />
+        <span className="elegant-serif text-2xl md:text-4xl text-[#FFF5E1] relative z-10">
           {String(value).padStart(2, '0')}
         </span>
       </div>
-      <p className="elegant-sans text-xs md:text-sm tracking-widest text-foreground/60 uppercase">
+      <p className="elegant-sans text-xs md:text-sm tracking-widest text-[#FFF5E1]/80 uppercase">
         {label}
       </p>
     </div>
@@ -76,20 +76,20 @@ export default function CountdownTimer() {
   return (
     <section 
   id="countdown-section" 
-  className="relative w-full px-6 md:px-8 py-16 md:py-20 bg-cover bg-center"
-  // style={{ backgroundImage: "url('/background.png')" }}
+  className="relative w-full px-6 md:px-8 py-16 md:py-24 bg-center"
+  style={{ backgroundImage: 'url("/red.png")' }}
 >
-      {/* Overlay */}
-      <div className="absolute inset-0 bg-white/65"></div>
-
+     
+  {/* Overlay */}
+      <div className="absolute inset-0 bg-black/30 z-0"></div>
       {/* Content */}
       <div className="relative max-w-4xl mx-auto ">
-        <h2 className={`elegant-serif text-3xl md:text-5xl text-foreground text-center mb-4 md:mb-6 transition-all duration-1000 ${
+        <h2 className={`elegant-serif text-3xl md:text-5xl text-[#FFF5E1] text-center mb-4 md:mb-6 transition-all duration-1000 ${
           isVisible ? 'opacity-100' : 'opacity-0'
         }`}>
-          Our Wedding Day 💍
+          Our Wedding Day 
         </h2>
-        <p className={`elegant-serif text-2xl md:text-2xl text-foreground/60 text-center mb-12 md:mb-8 transition-all duration-1000 ${
+        <p className={`elegant-serif text-2xl md:text-2xl text-[#FFF5E1] text-center mb-12 md:mb-8 transition-all duration-1000 ${
           isVisible ? 'opacity-100' : 'opacity-0'
         } delay-75`}>
           countdown to the big day
@@ -100,17 +100,17 @@ export default function CountdownTimer() {
           isVisible ? 'opacity-100 scale-100' : 'opacity-0 scale-95'
         }`}>
           <TimeUnit value={timeRemaining.days} label="Days" />
-          <div className="elegant-serif text-foreground/30 text-2xl md:text-4xl h-6 md:h-8">:</div>
+          <div className="elegant-serif text-[#FFF5E1] text-2xl md:text-4xl h-6 md:h-8">:</div>
           <TimeUnit value={timeRemaining.hours} label="Hours" />
-          <div className="elegant-serif text-foreground/30 text-2xl md:text-4xl h-6 md:h-8">:</div>
+          <div className="elegant-serif text-[#FFF5E1] text-2xl md:text-4xl h-6 md:h-8">:</div>
           <TimeUnit value={timeRemaining.minutes} label="Minutes" />
-          <div className="elegant-serif text-foreground/30 text-2xl md:text-4xl h-6 md:h-8">:</div>
+          <div className="elegant-serif text-[#FFF5E1] text-2xl md:text-4xl h-6 md:h-8">:</div>
           <TimeUnit value={timeRemaining.seconds} label="Seconds" />
         </div>
 
         {/* Message */}
         <div className="mt-12 md:mt-16 text-center">
-          <p className="elegant-sans text-base md:text-lg text-foreground/70 leading-relaxed">
+          <p className="elegant-sans text-base md:text-lg text-[#FFF5E1] leading-relaxed">
             We're counting down the days until we can celebrate this beautiful moment with you
           </p>
         </div>

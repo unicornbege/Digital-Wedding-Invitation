@@ -26,44 +26,44 @@ export default function HeroSection({ guestName }: HeroSectionProps) {
         
         {/* Date - top accent */}
         <div className="mb-6 md:mb-0">
-          <p className="elegant-sans text-xs md:text-sm tracking-widest text-[#6B1F22] uppercase">
+          <p className="elegant-sans text-xs md:text-sm tracking-widest text-[#8B2E32] uppercase">
             Saturday, the 11th of April, 2026
           </p>
         </div>
 
         {/* Main heading */}
-        <h1 className="elegant-serif text-5xl md:text-7xl lg:text-8xl text-[#6B1F22] mb-6 md:mb-0 leading-tight">
+        <h1 className="elegant-serif text-5xl md:text-7xl lg:text-8xl text-[#8B2E32] mb-6 md:mb-0 leading-tight">
           Putri
           <br />
-          <span className="text-[#6B1F22]">&</span>
+          <span className="text-[#8B2E32]">&</span>
           <br />
           Budi
         </h1>
 
         {/* Divider */}
         <div className="flex items-center justify-center gap-4 my-8 md:my-4">
-          <div className="w-12 md:w-16 h-px bg-[#6B1F22]/70" />
-          <svg className="w-4 h-4 md:w-5 md:h-5 text-[#6B1F22]/80" viewBox="0 0 24 24" fill="currentColor">
+          <div className="w-12 md:w-16 h-px bg-[#8B2E32]/70" />
+          <svg className="w-4 h-4 md:w-5 md:h-5 text-[#8B2E32]/80" viewBox="0 0 24 24" fill="currentColor">
             <circle cx="12" cy="12" r="2" />
           </svg>
-          <div className="w-12 md:w-16 h-px bg-[#6B1F22]/70" />
+          <div className="w-12 md:w-16 h-px bg-[#8B2E32]/70" />
         </div>
 
         {/* Subheading */}
-        <p className="elegant-sans text-base md:text-lg text-[#6B1F22] max-w-2xl mx-auto leading-relaxed mb-8 md:mb-12">
+        <p className="elegant-sans text-base md:text-lg text-[#8B2E32] max-w-2xl mx-auto leading-relaxed mb-8 md:mb-12">
           Together with their families,<br />
           request the honor of your presence
         </p>
 
         {/* Guest message */}
-        <p className="elegant-serif text-lg md:text-2xl text-[#6B1F22]/80 italic">
+        <p className="elegant-serif text-lg md:text-2xl text-[#8B2E32]/80 italic">
           We would be delighted to celebrate with you, {guestName}
         </p>
       </div>
 
       {/* Scroll indicator */}
       <div className="absolute bottom-8 md:bottom-18 animate-bounce">
-        <svg className="w-5 h-5 md:w-6 md:h-6 text-[#6B1F22]/70" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+        <svg className="w-5 h-5 md:w-6 md:h-6 text-[#8B2E32]/70" fill="none" stroke="currentColor" viewBox="0 0 24 24">
           <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 14l-7 7m0 0l-7-7m7 7V3" />
         </svg>
       </div>

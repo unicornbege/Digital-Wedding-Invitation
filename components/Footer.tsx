@@ -25,6 +25,7 @@ export default function Footer() {
 
   return (
     <footer id="footer-section" className="w-full bg-foreground text-background px-6 md:px-8 py-16 md:py-10">
+      
       <div className="max-w-4xl mx-auto">
         {/* Main content */}
         <div className={`text-center transition-all duration-1000 ${
