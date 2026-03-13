@@ -77,7 +77,7 @@ export default function CountdownTimer() {
     <section 
   id="countdown-section" 
   className="relative w-full px-6 md:px-8 py-16 md:py-20 bg-cover bg-center"
-  style={{ backgroundImage: "url('/background.png')" }}
+  // style={{ backgroundImage: "url('/background.png')" }}
 >
       {/* Overlay */}
       <div className="absolute inset-0 bg-white/65"></div>
