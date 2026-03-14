@@ -35,10 +35,10 @@ export default function CoupleSection() {
         <div className="grid grid-cols-1 md:grid-cols-2 gap-12 md:gap-16">
           {/* Sarah */}
           <div className={`flex flex-col items-center text-center transition-all duration-1000 ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'}`}>
-            <h3 className="elegant-serif text-3xl md:text-4xl text-[#FFF5E1] mb-3">
+            <h3 className ="elegant-serif text-3xl md:text-4xl text-[#FFF5E1] mb-3 uppercase" style={{ fontFamily: "cormorant"}}>
               Putri Mirza Bayyinatur Rosyidah
             </h3>
-            <p className="elegant-sans text-sm md:text-base text-[#FFF5E1] leading-relaxed max-w-sm">
+            <p className="elegant-sans text-xl md:text-xl text-[#FFF5E1] leading-relaxed max-w-lg" style={{ fontFamily: "cormorant"}}>
               Putri dari <br />
               bapak Suhermanto 
               &
@@ -49,10 +49,11 @@ export default function CoupleSection() {
 
           {/* Michael */}
           <div className={`flex flex-col items-center text-center transition-all duration-1000 ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'} delay-100`}>
-            <h3 className="elegant-serif text-3xl md:text-4xl text-[#FFF5E1] mb-3">
-              Abdul Syukur Budi Santoso
+            <h3 className="elegant-serif text-3xl md:text-4xl text-[#FFF5E1] mb-3 uppercase" style={{ fontFamily: "cormorant"}}>
+              Abdul Syukur Budi <br />
+              Santoso
             </h3>
-            <p className="elegant-sans text-sm md:text-base text-[#FFF5E1] leading-relaxed max-w-sm">
+            <p className="elegant-sans text-xl md:text-xl text-[#FFF5E1] leading-relaxed max-w-sm" style={{ fontFamily: "cormorant",}}>
              Putra dari <br />
               bapak Ataberi Utomo
               &
@@ -68,8 +69,8 @@ export default function CoupleSection() {
 
         <div className="relative "></div>
           <div className="max-w-2xl mx-auto">
-            <h2 className="elegant-serif text-3xl md:text-4xl text-[#FFF5E1] text-center mb-6 md:mb-8 mt-8 md:mt-12 ">
-              Our Story
+            <h2 className="elegant-serif text-3xl md:text-4xl text-[#FFF5E1] text-center mb-6 md:mb-8 mt-8 md:mt-12 " >
+              OUR STORY
             </h2>
             <p className="elegant-sans text-base md:text-lg text-[#FFF5E1] text-center leading-relaxed">
             Their story began with a simple hello. From quiet conversations to countless cherished moments, two hearts discovered a love that was meant to be. With every shared smile and every passing day, their love grew deeper and stronger. Hand in hand, they now step forward to begin the beautiful journey of forever.

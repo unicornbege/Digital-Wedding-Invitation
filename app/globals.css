@@ -3,6 +3,21 @@
 
 @custom-variant dark (&:is(.dark *));
 
+@font-face {
+  font-family: "Sophia-Martini";
+  src: url("/fonts/Sophia-Martini.otf") format("opentype");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Housing";
+  src: url("/fonts/Housing.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
 :root {
   --background: oklch(0.98 0 0);
   --foreground: oklch(0.15 0 0);
@@ -184,3 +199,4 @@
     }
   }
 }
+

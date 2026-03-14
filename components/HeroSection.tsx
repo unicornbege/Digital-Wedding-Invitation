@@ -50,14 +50,13 @@ export default function HeroSection({ guestName }: HeroSectionProps) {
         </div>
 
         {/* Subheading */}
-        <p className="elegant-sans text-base md:text-lg text-[#8B2E32] max-w-2xl mx-auto leading-relaxed mb-8 md:mb-12">
-          Together with their families,<br />
-          request the honor of your presence
+        <p className="elegant-sans text-base md:text-sm text-[#8B2E32] max-w-2xl mx-auto leading-relaxed mb-8 md:mb-12 uppercase">
+          We would be delighted to celebrate with you, {guestName}
         </p>
 
         {/* Guest message */}
-        <p className="elegant-serif text-lg md:text-2xl text-[#8B2E32]/80 italic">
-          We would be delighted to celebrate with you, {guestName}
+        <p className="elegant-serif text-lg md:text-2xl text-[#8B2E32]/80" style={{ fontFamily: 'Sophia-Martini', fontWeight: "bold" }} >
+          Request the honor of your presence at our wedding celebration
         </p>
       </div>
 

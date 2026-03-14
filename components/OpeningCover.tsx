@@ -43,10 +43,10 @@ export default function OpeningCover({ onOpen, guestName }: OpeningCoverProps) {
           <p className="elegant-sans text-xs md:text-sm tracking-widest text-white/80 mb-4 md:mb-6 uppercase">
             You are cordially invited to
           </p>
-          <h1 className="elegant-serif text-4xl md:text-6xl lg:text-7xl text-white mb-4 md:mb-6 leading-tight">
+          <h1 className="elegant-serif text-4xl md:text-6xl lg:text-7xl text-white mb-4 md:mb-6 leading-tight " >
             The Wedding
           </h1>
-          <p className="elegant-sans text-sm md:text-base text-white/70 max-w-md mx-auto leading-relaxed">
+          <p className="text-2xl md:text-xl text-white max-w-md mx-auto leading-relaxed" style={{ fontFamily: 'Sophia-Martini', fontWeight: "bold" }} >
             Of
           </p>
           <h2 className="elegant-serif text-2xl md:text-4xl text-white mt-4 mb-8">
