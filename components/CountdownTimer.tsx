@@ -84,17 +84,23 @@ export default function CountdownTimer() {
       <div className="absolute inset-0 bg-black/30 z-0"></div>
       {/* Content */}
       <div className="relative max-w-4xl mx-auto ">
-        <h2 className={`elegant-serif text-3xl md:text-5xl text-[#FFF5E1] text-center mb-4 md:mb-6 transition-all duration-1000 ${
+        {/* <h2 className={`elegant-serif text-3xl md:text-5xl text-[#FFF5E1] text-center mb-4 md:mb-6 transition-all duration-1000 ${
           isVisible ? 'opacity-100' : 'opacity-0'
-        }`}>
+        }`} >
           Our Wedding Day 
-        </h2>
-        <p className={`elegant-serif text-2xl md:text-2xl text-[#FFF5E1] text-center mb-12 md:mb-8 transition-all duration-1000 ${
+        </h2> */}
+        {/* <p className={`elegant-serif text-4xl md:text-5xl text-[#FFF5E1] text-center mb-12 md:mb-8 transition-all duration-1000 ${
           isVisible ? 'opacity-100' : 'opacity-0'
-        } delay-75`}>
+        } delay-75`} style={{fontFamily: 'onnier', fontWeight: '100'}}>
           countdown to the big day
-        </p>
-
+        </p> */}
+        {/* Message */}
+        <div className="mb-12 md:mb-10 text-center">
+          <p className="elegant-sans text-xl md:text-3xl text-[#FFF5E1] leading-relaxed" style={{ fontFamily: "ephesis"}}>
+            "We're counting down the days until we <br />
+            can celebrate this beautiful moment with you"
+          </p>
+        </div>
         {/* Countdown boxes */}
         <div className={`flex items-center justify-center gap-4 md:gap-6 flex-wrap transition-all duration-1000 ${
           isVisible ? 'opacity-100 scale-100' : 'opacity-0 scale-95'
@@ -107,13 +113,10 @@ export default function CountdownTimer() {
           <div className="elegant-serif text-[#FFF5E1] text-2xl md:text-4xl h-6 md:h-8">:</div>
           <TimeUnit value={timeRemaining.seconds} label="Seconds" />
         </div>
-
-        {/* Message */}
-        <div className="mt-12 md:mt-16 text-center">
-          <p className="elegant-sans text-base md:text-lg text-[#FFF5E1] leading-relaxed">
-            We're counting down the days until we can celebrate this beautiful moment with you
-          </p>
+        <div className=" relative mt-8 md:mt-8 pt-8 md:pt-8">
+        <div className="h-[1px] w-full bg-gradient-to-r from-transparent via-[#FFF5E1] to-transparent"></div>
         </div>
+        
       </div>
     </section>
   );

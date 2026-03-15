@@ -53,7 +53,7 @@ export default function EventDetails() {
       <div className="max-w-6xl mx-auto">
         
         {/* content */}
-        <h2 className="relative elegant-serif text-3xl md:text-5xl text-[#8B2E32] text-center mb-16 md:mb-16">
+        <h2 className="relative elegant-serif text-5xl md:text-7xl text-[#8B2E32] text-center mb-16 md:mb-8 " style={{ fontFamily: 'Pinyon', fontWeight: 'bold' }}>
           Event Details
         </h2>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-10 md:gap-12 rounded-xl overflow-hidden">
@@ -136,26 +136,26 @@ export default function EventDetails() {
           <div className="h-[2px] w-full bg-gradient-to-r from-transparent via-[#8B2E32]/80 to-transparent mb-16 md:mb-14 "></div>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             <div className="text-center">
-              <p className="relative elegant-sans text-xl md:text-xl tracking-widest text-[#8B2E32] uppercase mb-2">
+              <p className="relative elegant-sans text-xl md:text-xl tracking-widest text-[#8B2E32] uppercase mb-2" style={{ fontFamily: 'nunito'}}>
                 Dress Code
               </p>
-              <p className="relative elegant-serif text-lg md:text-2xl text-[#8B2E32]">
+              <p className="relative elegant-serif text-xl md:text-3xl text-[#8B2E32]">
                 Formal Attire
               </p>
             </div>
             <div className="text-center">
-              <p className="relative elegant-sans text-xl md:text-xl tracking-widest text-[#8B2E32] uppercase mb-2">
+              <p className="relative elegant-sans text-xl md:text-xl tracking-widest text-[#8B2E32] uppercase mb-2" style={{ fontFamily: 'nunito'}}>
                 Date
               </p>
-              <p className="relative elegant-serif text-lg md:text-2xl text-[#8B2E32]">
+              <p className="relative elegant-serif text-xl md:text-3xl text-[#8B2E32]">
                 April 11, 2026
               </p>
             </div>
             <div className="text-center">
-              <p className="relative elegant-sans text-xl md:text-xl tracking-widest text-[#8B2E32] uppercase mb-2">
+              <p className="relative elegant-sans text-xl md:text-xl tracking-widest text-[#8B2E32] uppercase mb-2" style={{ fontFamily: 'nunito'}}>
                 Contact
               </p>
-              <p className="relative elegant-serif text-lg md:text-2xl text-[#8B2E32]">
+              <p className="relative elegant-serif text-xl md:text-3xl text-[#8B2E32]">
                 +62 812-3042-7040
               </p>
             </div>

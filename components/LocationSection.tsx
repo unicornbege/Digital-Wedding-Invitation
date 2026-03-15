@@ -39,9 +39,10 @@ export default function LocationSection() {
     
     
       <div className="max-w-6xl mx-auto">
-        <h2 className={`elegant-serif text-3xl md:text-5xl text-[#8B2E32] text-center mb-16 md:mb-6 transition-all duration-1000 ${
+        <h2 className={`elegant-serif text-3xl md:text-6xl text-[#8B2E32] text-center mb-16 md:mb-6 transition-all duration-1000 ${
           isVisible ? 'opacity-100' : 'opacity-0'
-        }`}>
+        }`} 
+        style={{ fontFamily: 'Ephesis', fontWeight: 'bold' }}>
           Venue Information
         </h2>
 
