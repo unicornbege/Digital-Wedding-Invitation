@@ -96,7 +96,7 @@ export default function CountdownTimer() {
         {/* Message */}
         <div className="mb-12 md:mb-10 text-center">
           <p
-            className="elegant-sans text-xl md:text-3xl text-[#FFF5E1] leading-relaxed"
+            className="elegant-sans text-2xl md:text-3xl text-[#FFF5E1] leading-relaxed"
             style={{ fontFamily: "ephesis" }}
           >
             "We're counting down the days until we <br />

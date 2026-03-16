@@ -53,7 +53,7 @@ export default function HeroSection({ guestName }: HeroSectionProps) {
         </div>
 
         {/* Subheading */}
-        <p className="elegant-sans text-base md:text-base text-[#8B2E32] max-w-2xl mx-auto leading-relaxed mb-8 md:mb-12 uppercase">
+        <p className="elegant-sans text-xs md:text-base text-[#8B2E32] max-w-2xl mx-auto leading-relaxed mb-8 md:mb-12 uppercase">
           We would be delighted to celebrate with you, {guestName}
         </p>
 
