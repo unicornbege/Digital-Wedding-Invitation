@@ -1,6 +1,6 @@
-'use client';
+"use client";
 
-import { useEffect, useState } from 'react';
+import { useEffect, useState } from "react";
 
 export default function EventDetails() {
   const [isVisible, setIsVisible] = useState(false);
@@ -12,10 +12,10 @@ export default function EventDetails() {
           setIsVisible(true);
         }
       },
-      { threshold: 0.3 }
+      { threshold: 0.3 },
     );
 
-    const element = document.getElementById('event-section');
+    const element = document.getElementById("event-section");
     if (element) observer.observe(element);
 
     return () => {
@@ -26,34 +26,36 @@ export default function EventDetails() {
   const events = [
     {
       id: 1,
-      title: 'Akad Nikah',
-      subtitle: 'Solemnization',
-      date: 'Saturday, April 11, 2026',
-      time: '06:30 AM - 08:00 AM',
-      location: 'Magnolia Cofee & Space',
-      description: 'The sacred ceremony where we will pledge our vows'
+      title: "Akad Nikah",
+      subtitle: "Solemnization",
+      date: "Saturday, April 11, 2026",
+      time: "06:30 AM - 08:00 AM",
+      location: "Magnolia Cofee & Space",
+      description: "The sacred ceremony where we will pledge our vows",
     },
     {
       id: 2,
-      title: 'Reception',
-      subtitle: 'Celebration & Dinner',
-      date: 'Saturday, April 11, 2026',
-      time: '18:00 PM - 22:00 PM',
-      location: 'Magnolia Cofee & Space',
-      description: 'Join us for an elegant evening of celebration &'
-    }
+      title: "Reception",
+      subtitle: "Celebration & Dinner",
+      date: "Saturday, April 11, 2026",
+      time: "18:00 PM - 22:00 PM",
+      location: "Magnolia Cofee & Space",
+      description: "Join us for an elegant evening of celebration &",
+    },
   ];
 
   return (
     <section
-    id="event-section"
-    className=" w-full px-6 md:px-8 py-16 md:py-24 bg-white relative bg-no-repeat bg-cover bg-center"
-    style={{ backgroundImage: 'url("/beige.png")' }}
+      id="event-section"
+      className=" w-full px-6 md:px-8 py-16 md:py-24 bg-white relative bg-no-repeat bg-cover bg-center"
+      style={{ backgroundImage: 'url("/beige.png")' }}
     >
       <div className="max-w-6xl mx-auto">
-        
         {/* content */}
-        <h2 className="relative elegant-serif text-5xl md:text-7xl text-[#8B2E32] text-center mb-16 md:mb-8 " style={{ fontFamily: 'Pinyon', fontWeight: 'bold' }}>
+        <h2
+          className="relative elegant-serif text-5xl md:text-7xl text-[#8B2E32] text-center mb-16 md:mb-8 "
+          style={{ fontFamily: "Pinyon", fontWeight: "bold" }}
+        >
           Event Details
         </h2>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-10 md:gap-12 rounded-xl overflow-hidden">
@@ -61,17 +63,22 @@ export default function EventDetails() {
             <div
               key={event.id}
               className={`transition-all duration-1000 ${
-                isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'
-              } ${index === 1 ? 'delay-100' : ''}`}
+                isVisible
+                  ? "opacity-100 translate-y-0"
+                  : "opacity-0 translate-y-8"
+              } ${index === 1 ? "delay-100" : ""}`}
             >
-              
-              <div className=" relative rounded-xl p-8 md:p-10 border-3xl border-[#343728] h-full flex flex-col "
-              style={{backgroundImage: 'url("/grstars.jpeg")', backgroundSize: 'cover', backgroundPosition: 'center', }}
+              <div
+                className=" relative rounded-xl p-8 md:p-10 border-3xl border-[#343728] h-full flex flex-col "
+                style={{
+                  backgroundImage: 'url("/grstars.jpeg")',
+                  backgroundSize: "cover",
+                  backgroundPosition: "center",
+                }}
               >
+                {/* overlay */}
+                <div className="absolute rounded-xl inset-0 bg-black/20"></div>
 
-              {/* overlay */}
-              <div className="absolute rounded-xl inset-0 bg-black/20"></div>
-              
                 {/* Icon area */}
                 <div className="mb-6 z-10">
                   <div className="w-12 h-12 border border-[#FFF5E1]/75 rounded-full flex items-center justify-center mb-4  ">
@@ -124,7 +131,6 @@ export default function EventDetails() {
                   <p className="elegant-sans text-sm md:text-base text-[#FFF5E1]/80 leading-relaxed">
                     {event.description}
                   </p>
-                  
                 </div>
               </div>
             </div>
@@ -136,7 +142,10 @@ export default function EventDetails() {
           <div className="h-[2px] w-full bg-gradient-to-r from-transparent via-[#8B2E32]/80 to-transparent mb-16 md:mb-14 "></div>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             <div className="text-center">
-              <p className="relative elegant-sans text-xl md:text-xl tracking-widest text-[#8B2E32] uppercase mb-2" style={{ fontFamily: 'nunito'}}>
+              <p
+                className="relative elegant-sans text-xl md:text-xl tracking-widest text-[#8B2E32] uppercase mb-2"
+                style={{ fontFamily: "nunito" }}
+              >
                 Dress Code
               </p>
               <p className="relative elegant-serif text-xl md:text-3xl text-[#8B2E32]">
@@ -144,7 +153,10 @@ export default function EventDetails() {
               </p>
             </div>
             <div className="text-center">
-              <p className="relative elegant-sans text-xl md:text-xl tracking-widest text-[#8B2E32] uppercase mb-2" style={{ fontFamily: 'nunito'}}>
+              <p
+                className="relative elegant-sans text-xl md:text-xl tracking-widest text-[#8B2E32] uppercase mb-2"
+                style={{ fontFamily: "nunito" }}
+              >
                 Date
               </p>
               <p className="relative elegant-serif text-xl md:text-3xl text-[#8B2E32]">
@@ -152,7 +164,10 @@ export default function EventDetails() {
               </p>
             </div>
             <div className="text-center">
-              <p className="relative elegant-sans text-xl md:text-xl tracking-widest text-[#8B2E32] uppercase mb-2" style={{ fontFamily: 'nunito'}}>
+              <p
+                className="relative elegant-sans text-xl md:text-xl tracking-widest text-[#8B2E32] uppercase mb-2"
+                style={{ fontFamily: "nunito" }}
+              >
                 Contact
               </p>
               <p className="relative elegant-serif text-xl md:text-3xl text-[#8B2E32]">

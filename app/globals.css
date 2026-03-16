@@ -1,5 +1,5 @@
-@import 'tailwindcss';
-@import 'tw-animate-css';
+@import "tailwindcss";
+@import "tw-animate-css";
 
 @custom-variant dark (&:is(.dark *));
 
@@ -105,9 +105,9 @@
 }
 
 @theme inline {
-  --font-sans: 'Inter', 'Geist', 'Geist Fallback';
-  --font-serif: 'Playfair Display', serif;
-  --font-mono: 'Geist Mono', 'Geist Mono Fallback';
+  --font-sans: "Inter", "Geist", "Geist Fallback";
+  --font-serif: "Playfair Display", serif;
+  --font-mono: "Geist Mono", "Geist Mono Fallback";
   --color-background: var(--background);
   --color-foreground: var(--foreground);
   --color-card: var(--card);
@@ -161,14 +161,18 @@
 
 @layer utilities {
   .elegant-serif {
-    font-family: 'Playfair Display', serif;
+    font-family: "Playfair Display", serif;
     font-weight: 600;
     letter-spacing: -0.02em;
   }
 
   .elegant-sans {
-    font-family: 'Inter', sans-serif;
+    font-family: "Inter", sans-serif;
     letter-spacing: 0.025em;
+  }
+
+  .font-cormorant {
+    font-family: var(--font-cormorant), serif;
   }
 
   .fade-in {
@@ -214,4 +218,3 @@
     }
   }
 }
-
