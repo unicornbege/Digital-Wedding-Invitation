@@ -60,12 +60,12 @@ export default function OpeningCover({ onOpen, guestName }: OpeningCoverProps) {
             The Wedding
           </h1>
           <p
-            className="text-2xl md:text-xl text-white max-w-md mx-auto leading-relaxed"
+            className="text-xl md:text-xl text-white max-w-md mx-auto leading-relaxed"
             style={{ fontFamily: "Sophia-Martini", fontWeight: "bold" }}
           >
             Of
           </p>
-          <h2 className="elegant-serif text-2xl md:text-4xl text-white mt-4 mb-8">
+          <h2 className="elegant-serif text-4xl md:text-4xl text-white mt-4 mb-8">
             Putri & Budi
           </h2>
         </div>
