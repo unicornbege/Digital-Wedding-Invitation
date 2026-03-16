@@ -56,7 +56,7 @@ export default function CoupleSection() {
             </h3>
             <p className="elegant-sans font-cormorant text-xl md:text-xl text-[#FFF5E1] leading-relaxed max-w-lg">
               Putri dari <br />
-              bapak Suhermanto & ibu Walidah Qadar Tatik <br />
+              Bapak Suhermanto & Ibu Walidah Qadar Tatik <br />
               (Dsn. Langsepan Ds. Randuagung - Lumajang)
             </p>
           </div>
@@ -83,7 +83,7 @@ export default function CoupleSection() {
             </h3>
             <p className="elegant-sans font-cormorant text-xl md:text-xl text-[#FFF5E1] leading-relaxed max-w-sm">
               Putra dari <br />
-              bapak Ataberi Utomo & ibu Tasmiyati <br />
+              Bapak Ataberi Utomo & Ibu Tasmiyati <br />
               (Kel. blimbing Kec. Paciran - Lamongan)
             </p>
           </div>
