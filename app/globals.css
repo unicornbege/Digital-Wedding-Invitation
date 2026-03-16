@@ -175,6 +175,10 @@
     font-family: var(--font-cormorant), serif;
   }
 
+  .font-nunito {
+    font-family: var(--font-nunito), sans-serif;
+  }
+
   .fade-in {
     animation: fadeIn 0.8s ease-in-out;
   }

@@ -40,7 +40,7 @@ export default function EventDetails() {
       date: "Saturday, April 11, 2026",
       time: "18:00 PM - 22:00 PM",
       location: "Magnolia Cofee & Space",
-      description: "Join us for an elegant evening of celebration &",
+      description: "Join us for an elegant evening of celebration & dinner",
     },
   ];
 
@@ -142,10 +142,7 @@ export default function EventDetails() {
           <div className="h-[2px] w-full bg-gradient-to-r from-transparent via-[#8B2E32]/80 to-transparent mb-16 md:mb-14 "></div>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             <div className="text-center">
-              <p
-                className="relative elegant-sans text-xl md:text-xl tracking-widest text-[#8B2E32] uppercase mb-2"
-                style={{ fontFamily: "nunito" }}
-              >
+              <p className="relative elegant-sans text-lg md:text-lg tracking-widest text-[#8B2E32] uppercase mb-2" style={{ fontFamily: 'cormorant' }}>
                 Dress Code
               </p>
               <p className="relative elegant-serif text-xl md:text-3xl text-[#8B2E32]">
@@ -153,10 +150,7 @@ export default function EventDetails() {
               </p>
             </div>
             <div className="text-center">
-              <p
-                className="relative elegant-sans text-xl md:text-xl tracking-widest text-[#8B2E32] uppercase mb-2"
-                style={{ fontFamily: "nunito" }}
-              >
+              <p className="relative elegant-sans cormorant text-lg md:text-lg tracking-widest text-[#8B2E32] uppercase mb-2" style={{ fontFamily: 'cormorant' }}>
                 Date
               </p>
               <p className="relative elegant-serif text-xl md:text-3xl text-[#8B2E32]">
@@ -164,10 +158,7 @@ export default function EventDetails() {
               </p>
             </div>
             <div className="text-center">
-              <p
-                className="relative elegant-sans text-xl md:text-xl tracking-widest text-[#8B2E32] uppercase mb-2"
-                style={{ fontFamily: "nunito" }}
-              >
+              <p className="relative elegant-sans cormorant text-lg md:text-lg tracking-widest text-[#8B2E32] uppercase mb-2" style={{ fontFamily: 'cormorant' }}>
                 Contact
               </p>
               <p className="relative elegant-serif text-xl md:text-3xl text-[#8B2E32]">

@@ -5,6 +5,7 @@ import {
   Inter,
   Playfair_Display,
   Cormorant_Garamond,
+  Nunito,
 } from "next/font/google";
 import { Analytics } from "@vercel/analytics/next";
 import "./globals.css";
@@ -21,6 +22,11 @@ const _cormorant = Cormorant_Garamond({
   subsets: ["latin"],
   variable: "--font-cormorant",
   weight: ["400", "500", "600", "700"],
+});
+const _nunito = Nunito({
+  subsets: ["latin"],
+  variable: "--font-nunito",
+  weight: ["300", "400", "500", "600", "700", "800", "900"],
 });
 
 export const metadata: Metadata = {
@@ -60,7 +66,7 @@ export default function RootLayout({
   return (
     <html
       lang="en"
-      className={`${_inter.variable} ${_playfair.variable} ${_cormorant.variable}`}
+      className={`${_inter.variable} ${_playfair.variable} ${_cormorant.variable} ${_nunito.variable}`}
     >
       <body className="font-sans antialiased bg-background text-foreground">
         {children}
