@@ -9,4 +9,5 @@ Features:
 - Scroll animations
 - Elegant typography
 
-budi-putri-wedding.vercel.app
+https://budi-putri-wedding.vercel.app/
+
